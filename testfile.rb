@@ -15,11 +15,9 @@ class Calculator
   def sub
     puts x - y
   end
-
   def mul   
     puts x * y
   end
-
   def division
     puts x / y
   end
