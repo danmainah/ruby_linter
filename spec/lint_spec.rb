@@ -36,5 +36,4 @@ describe Stylelint do
       expect(r).not_to eql('Extra empty line detected at the beginning')
     end
   end
- 
 end
