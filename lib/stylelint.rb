@@ -3,7 +3,7 @@ module Lintcheck
     if !line.strip.empty? && line[-2] == ' '
       @errors << "Line #{index} ends with a trailing white space".colorize(:light_red)
     end
-
+  end
     def empty_line(line, index)
       @errors << "Empty line on line #{index}" if line.strip.empty?
     end
@@ -23,5 +23,5 @@ module Lintcheck
 
       @errors << 'Extra empty line detected at the beginning'
     end
-  end
+  
 end
