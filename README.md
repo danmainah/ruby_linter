@@ -29,6 +29,7 @@
        end
   
   #the bad code
+     
      -----
      class Calculator
      attr_accessor :x, :y
@@ -38,6 +39,7 @@
         @x = num1
         @y = num2
      end
+
  >  Error  empty startline above the class Calculator denoted by ----
 
   ## check empty line error
@@ -56,25 +58,25 @@
      def sub
         puts x - y
      end
-  -----
+     -----
      def mul   
        puts x * y
      end
+
  >Error  empty line denoted by ----
 
  ## check for long lines that need to be shortened
- #the good code
-  class Calculator
-    attr_accessor :x, :y
+ # the good code
+  
      puts 'an example of how the calculator class works,
      you call the method outside the class.'
-    def initialize(num1, num2)
+     def initialize(num1, num2)
       @x = num1
       @y = num2
     end
 
-  #the bad code
-    class Calculator
+  # the bad code
+      
       attr_accessor :x, :y
       puts 'an example of how the calculator class works you call the method outside the class.'
       def initialize(num1, num2)
@@ -92,16 +94,17 @@
 
   #the bad code
   
-   def sub  ||
-    puts x - y
-   end
+    def sub  ||
+      puts x - y
+    end
+
   >Error Trailing space denoted by || indicating pisition of cursor
 
   ## check for missing emptyline at the end
   #the good code
   
     def sub
-     puts x - y
+      puts x - y
     end
     --------
 
@@ -110,6 +113,7 @@
     def sub
       puts x - y
     end
+    
   > Error detected by lack of ---- denoting the empty lastline
 
 ## Built With
