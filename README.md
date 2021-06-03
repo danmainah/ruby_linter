@@ -86,11 +86,12 @@
  > Error in the line beginning with puts its too long
 
    ## check for trailing spaces
- #the good code
+
+  #the good code
  
-   def sub
-    puts x - y
-   end
+    def sub
+      puts x - y
+    end
 
   #the bad code
   
@@ -113,7 +114,7 @@
     def sub
       puts x - y
     end
-    
+
   > Error detected by lack of ---- denoting the empty lastline
 
 ## Built With
