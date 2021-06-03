@@ -1,8 +1,7 @@
-
 class Calculator
   attr_accessor :x, :y
 
-  puts 'an example of how the calculator class works you call the method outside the class.'
+  puts "an example of how the calculator class works you call the method outside the class."
   def initialize(num1, num2)
     @x = num1
     @y = num2

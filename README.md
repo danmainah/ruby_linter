@@ -74,13 +74,13 @@
     end
 
   #the bad code
-  class Calculator
-    attr_accessor :x, :y
-    puts 'an example of how the calculator class works you call the method outside the class.'
-    def initialize(num1, num2)
-      @x = num1
-      @y = num2
-    end
+    class Calculator
+      attr_accessor :x, :y
+      puts 'an example of how the calculator class works you call the method outside the class.'
+      def initialize(num1, num2)
+        @x = num1
+        @y = num2
+      end
  > Error in the line beginning with puts its too long
 
    ## check for trailing spaces
@@ -94,7 +94,7 @@
   
    def sub  ||
     puts x - y
-  end
+   end
   >Error Trailing space denoted by || indicating pisition of cursor
 
   ## check for missing emptyline at the end
@@ -103,13 +103,13 @@
     def sub
      puts x - y
     end
-  --------
+    --------
 
   #the bad code
   
-   def sub
-    puts x - y
-  end
+    def sub
+      puts x - y
+    end
   > Error detected by lack of ---- denoting the empty lastline
 
 ## Built With
@@ -119,8 +119,8 @@
  
   # Getting Started
 To get a local copy up and running follow these simple example steps:
-- Click [here](https://github.com/prolajumokeoni/laptop_scraper.git)
-- Copy and clone to your local machine
+- Click [here](https://github.com/danmainah/ruby_linter) 
+- Run git clone https://github.com/danmainah/ruby_linter 
 
 
 ### Prerequisites before installing in your machine
@@ -129,13 +129,30 @@ To get a local copy up and running follow these simple example steps:
 - GitHub
 - Git
 
-# To check for errors on a file
- -In the downloader main Dir
- -Run bin/main.rb
+## Gems to make the project work
+> ensure they are installed before trying to run the program
+ -  bundler
+ - colorize
+ -  rspec
+   
+  # To install them
+     - Run  gem install bundler
+     - Run gem install rspec 
+     - Run gem install colorize 
+
+
+# To check for errors on your ruby file
+ - In the downloader main Dir
+ - Add the file in the main Dir
+ - In the main.rb file line 3 change the ('testfile.rb') to  ('yourfile.rb')
+ - Run bin/main.rb
 
  ## Testing
+ 
+ To Test the code 
+ - Ensure you are in the main Dir
+ - Run rspec
 
-To test the code, run `rspec` from root of the folder using terminal.
 Note: `testfile.rb` has been excluded from rubocop checks to allow RSpec testing without interfering with Gitflow actions
 
 

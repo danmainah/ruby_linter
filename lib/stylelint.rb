@@ -19,9 +19,8 @@ module Lintcheck
     @errors << "Line #{index} it too long make it shorter".colorize(:red)
   end
 
-  def empty_start_line(line, _index)
-    return unless line.strip.split.first.eql?('class')
-
-    @errors << 'Extra empty line detected at the beginning'
+  def empty_start_line(line, index)
+    # return if line.strip.split.first.eql?('')
+    @errors << 'Extra empty line detected at the beginning'.colorize(:red) if index == 1 && !line.start_with?('class')
   end
 end
