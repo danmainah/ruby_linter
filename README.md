@@ -15,102 +15,102 @@
 - check empty line error
 
 > Below are demonstrations of good and bad code for the above cases. I will use the pipe '|' symbol to indicate cursor position where necessary.
-> # check for empty startline
----the good code
-
-class Calculator
-  attr_accessor :x, :y
-
-  puts 'an example of how the calculator class works you call the method outside the class.'
-  def initialize(num1, num2)
-    @x = num1
-    @y = num2
-  end
-  
- ---the bad code
- 
- -----
-class Calculator
-  attr_accessor :x, :y
-
-  puts 'an example of how the calculator class works you call the method outside the class.'
-  def initialize(num1, num2)
-    @x = num1
-    @y = num2
-  end
-  Error  empty startline above the class Calculator denoted by ----
-
-> # check empty line error
 > 
-  ---the good code
+ ## check for empty startline
+  #the good code
+
+    class Calculator
+       attr_accessor :x, :y
+
+       puts 'an example of how the calculator class works you call the method outside the class.'
+       def initialize(num1, num2)
+         @x = num1
+         @y = num2
+       end
   
-  def sub
-    puts x - y
-  end
-  def mul   
-    puts x * y
-  end
+  #the bad code
+     -----
+     class Calculator
+     attr_accessor :x, :y
 
-   ---the bad code
+     puts 'an example of how the calculator class works you call the method outside the class.'
+     def initialize(num1, num2)
+        @x = num1
+        @y = num2
+     end
+ >  Error  empty startline above the class Calculator denoted by ----
+
+  ## check empty line error
+
+  #the good code
+  
+    def sub
+      puts x - y
+    end
+    def mul   
+      puts x * y
+    end
+
+   #the bad code
    
-  def sub
-    puts x - y
-  end
+     def sub
+        puts x - y
+     end
   -----
-  def mul   
-    puts x * y
-  end
- Error  empty line denoted by ----
+     def mul   
+       puts x * y
+     end
+ >Error  empty line denoted by ----
 
- > # check for long lines that need to be shortened
- ---the good code
-class Calculator
-  attr_accessor :x, :y
-  puts 'an example of how the calculator class works,
-   you call the method outside the class.'
-  def initialize(num1, num2)
-    @x = num1
-    @y = num2
-  end
+ ## check for long lines that need to be shortened
+ #the good code
+  class Calculator
+    attr_accessor :x, :y
+     puts 'an example of how the calculator class works,
+     you call the method outside the class.'
+    def initialize(num1, num2)
+      @x = num1
+      @y = num2
+    end
 
-  ---the bad code
-class Calculator
-  attr_accessor :x, :y
-  puts 'an example of how the calculator class works you call the method outside the class.'
-  def initialize(num1, num2)
-    @x = num1
-    @y = num2
-  end
-  Error in the line beginning with puts its too long
+  #the bad code
+  class Calculator
+    attr_accessor :x, :y
+    puts 'an example of how the calculator class works you call the method outside the class.'
+    def initialize(num1, num2)
+      @x = num1
+      @y = num2
+    end
+ > Error in the line beginning with puts its too long
 
-  > # check for trailing spaces
- ---the good code
+   ## check for trailing spaces
+ #the good code
  
    def sub
     puts x - y
-  end
+   end
 
-  ---the bad code
+  #the bad code
   
    def sub  ||
     puts x - y
   end
-  Error Trailing space denoted by || indicating pisition of cursor
+  >Error Trailing space denoted by || indicating pisition of cursor
 
-  > # check for missing emptyline at the end
-  ---the good code
+  ## check for missing emptyline at the end
+  #the good code
   
-   def sub
-    puts x - y
-  end
+    def sub
+     puts x - y
+    end
   --------
 
-  ---the bad code
+  #the bad code
   
    def sub
     puts x - y
   end
-  Error detected by lack of ---- denoting the empty lastline
+  > Error detected by lack of ---- denoting the empty lastline
 
 ## Built With
 - Ruby
