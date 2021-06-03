@@ -15,17 +15,8 @@
 - check empty line error
 
 > Below are demonstrations of good and bad code for the above cases. I will use the pipe '|' symbol to indicate cursor position where necessary.
-# check for empty startline
+> # check for empty startline
 ---the good code
-class Calculator
-  attr_accessor :x, :y
-
-  puts 'an example of how the calculator class works you call the method outside the class.'
-  def initialize(num1, num2)
-    @x = num1
-    @y = num2
-  end
----the bad code
 
 class Calculator
   attr_accessor :x, :y
@@ -35,10 +26,24 @@ class Calculator
     @x = num1
     @y = num2
   end
-  Error  empty startline above the class Calculator
+  
+ ---the bad code
+ 
+ -----
+class Calculator
+  attr_accessor :x, :y
 
-# check empty line error
+  puts 'an example of how the calculator class works you call the method outside the class.'
+  def initialize(num1, num2)
+    @x = num1
+    @y = num2
+  end
+  Error  empty startline above the class Calculator denoted by ----
+
+> # check empty line error
+> 
   ---the good code
+  
   def sub
     puts x - y
   end
@@ -47,6 +52,7 @@ class Calculator
   end
 
    ---the bad code
+   
   def sub
     puts x - y
   end
@@ -56,7 +62,7 @@ class Calculator
   end
  Error  empty line denoted by ----
 
- # check for long lines that need to be shortened
+ > # check for long lines that need to be shortened
  ---the good code
 class Calculator
   attr_accessor :x, :y
@@ -77,26 +83,30 @@ class Calculator
   end
   Error in the line beginning with puts its too long
 
-  # check for trailing spaces
+  > # check for trailing spaces
  ---the good code
+ 
    def sub
     puts x - y
   end
 
   ---the bad code
+  
    def sub  ||
     puts x - y
   end
   Error Trailing space denoted by || indicating pisition of cursor
 
-  # check for missing emptyline at the end
+  > # check for missing emptyline at the end
   ---the good code
+  
    def sub
     puts x - y
   end
   --------
 
   ---the bad code
+  
    def sub
     puts x - y
   end
