@@ -1,6 +1,7 @@
+![](https://img.shields.io/badge/Ruby-maroon)
+
 # Ruby_Linter
-## About 
-  
+
   This idea of making your workflow easier and reduce mistakes during coding is amazing 
   and believing you can create your own error checker is amazing.
 
